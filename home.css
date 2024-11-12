@@ -1,0 +1,221 @@
+/* Global styles */
+body {
+    background-image: url('toplap-removebg-preview.png');
+    background-size: cover;   
+    background-repeat: no-repeat;
+    background-position: center; 
+    width: 100%;                  
+    height: 100vh;   
+    background: linear-gradient(rgb(56, 85, 122), rgb(44, 46, 136, 0.514));
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.shopnow {
+    bottom: 10%;
+    left: 40%;
+    cursor: pointer;
+    position: relative;
+    padding: 10px 24px;
+    font-size: 18px;
+    color: #fff;
+    border: 2px solid rgb(33, 179, 216);
+    border-radius: 34px;
+    background-color: rgb(84, 84, 143);
+    font-weight: 600;
+    transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+    overflow: hidden;
+}
+
+.shopnow:hover {
+    color: #212121;
+    transform: scale(1.1);
+    box-shadow: 0 0px 20px rgba(193, 163, 98, 0.4);
+}
+
+.subject {
+    margin-right: 20px;
+    position: relative;
+    bottom: 150px;
+    right: 200px;
+}
+
+.masterimage {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 50px; 
+    position: relative;
+    left: 330px;
+    top: 130px;
+    z-index: 2;
+}
+
+.heading {
+    display: inline;
+    padding: 10px 20px;
+    border: none;
+    font-size: 17px;
+    color: #fff;
+    border-radius: 7px;
+    letter-spacing: 4px;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+.heading:hover {
+    box-shadow: 0 0 5px rgb(69, 99, 124),
+                0 0 25px rgb(69, 99, 124),
+                0 0 50px rgb(69, 99, 124),
+                0 0 100px rgb(69, 99, 124);
+}
+
+.navbar {
+    background: linear-gradient(rgb(56, 85, 122), rgb(44, 46, 136, 0.514));
+    justify-content: center;
+    padding: 10px;
+    position: relative;
+    top: 60px; 
+    z-index: 1;
+}
+
+.navbar a {
+    color: #ffffff;
+    margin: 15px; 
+    text-decoration: none; 
+    font-size: 1.2em;
+}
+
+.navbar a:hover {
+    transform: scale(1.1);
+    color: #030c29;
+}
+
+/* Mobile view (up to 600px wide) */
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .shopnow {
+        left: 0;
+        bottom: 170%;
+        padding: 8px 20px;
+        font-size: 16px;
+    }
+
+    .subject {
+        bottom: 100px;
+        right: 0;
+        text-align: center;
+    }
+
+    .masterimage {
+        left: 0;
+        top: -50px;
+        margin-left: 0;
+    }
+
+    .heading {
+        font-size: 14px;
+        letter-spacing: 3px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        top: 40px;
+    }
+
+    .navbar a {
+        font-size: 1em;
+        margin: 10px;
+    }
+}
+
+/* Tablet view (601px to 768px wide) */
+@media (min-width: 601px) and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .shopnow {
+        left: 0;
+        bottom: 8%;
+        padding: 10px 22px;
+        font-size: 17px;
+    }
+
+    .subject {
+        bottom: 120px;
+        right: 0;
+        text-align: center;
+    }
+
+    .masterimage {
+        left: 0;
+        top: 100px;
+        margin-left: 0;
+    }
+
+    .heading {
+        font-size: 15px;
+        letter-spacing: 3px;
+    }
+
+    .navbar {
+        flex-direction: row;
+        top: 50px;
+    }
+
+    .navbar a {
+        font-size: 1.1em;
+        margin: 12px;
+    }
+}
+
+/* Desktop view (769px and up) */
+@media (min-width: 769px) {
+    .container {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .shopnow {
+        left: 40%;
+        padding: 12px 26px;
+        font-size: 18px;
+    }
+
+    .subject {
+        bottom: 150px;
+        right: 200px;
+    }
+
+    .masterimage {
+        left: 330px;
+        top: 130px;
+        margin-left: 50px;
+    }
+
+    .heading {
+        font-size: 17px;
+        letter-spacing: 4px;
+    }
+
+    .navbar {
+        flex-direction: row;
+        justify-content: center;
+        top: 60px;
+    }
+
+    .navbar a {
+        font-size: 1.2em;
+        margin: 15px;
+    }
+}

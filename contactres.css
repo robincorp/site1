@@ -1,0 +1,68 @@
+
+.table {
+    background: rgba(44, 46, 136, 0.514);
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+
+.table2 {
+    background: rgb(56, 85, 122);
+    color: white;
+    padding: 20px;
+    padding-left: 80%;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.searchbar {
+    display: inline-block;
+    margin-left: 40%;
+    padding: 20px;
+    background: linear-gradient(rgb(44, 46, 136, 0.514), rgb(56, 85, 122));
+}
+
+.message {
+    display: inline-block;
+    margin-left: 40%;
+    padding: 20px;
+    padding-right: 27px;
+    background: linear-gradient(rgb(44, 46, 136, 0.514), rgb(56, 85, 122));
+}
+
+
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .table, .table2, .searchbar, .message {
+        padding: 15px; 
+    }
+
+    .searchbar, .message {
+        margin-left: 15%; 
+        width: 70%;
+    }
+
+    .table2 {
+        padding-left: 40%;
+    }
+}
+
+
+@media screen and (max-width: 767px) {
+    .table, .table2, .searchbar, .message {
+        padding: 10px;
+    }
+
+    .table2 {
+        padding-left: 10%;
+        text-align: center;
+    }
+
+    .searchbar, .message {
+        margin-left: 0;
+        width: 90%;
+        text-align: center;
+        display: block;
+        margin: 0 auto;
+    }
+}
